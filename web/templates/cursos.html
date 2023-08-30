@@ -3,7 +3,7 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Alumnos</h1>
+    <h1 class="h3 mb-2 text-gray-800">Cursos</h1>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -17,24 +17,20 @@
                         <tr>
                             <th>Id</th>
                             <th>Nombre</th>
-                            <th>Email</th>
-                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {%for alumno in alumnos %}
+                        {%for curso in cursos %}
                         <tr>
-                            <td>{{alumno.alumno_id}}</td>
-                            <td>{{alumno.alumno_nombre}}</td>
-                            <td>{{alumno.alumno_email}}</td>
-                            <td></td>
+                            <td>{{curso.curso_id}}</td>
+                            <td>{{curso.curso_nombre}}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
                 </table>
             </div>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nuevoUsuario">
-                Nuevo Alumno
+                Nuevo Curso
               </button>
         </div>
     </div>
